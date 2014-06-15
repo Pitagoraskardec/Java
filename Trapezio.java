@@ -1,14 +1,17 @@
-//Base = base  maior
-//base = base menor
-
+import javax.swing.JOptionPane;
 public class Trapezio{
-	double base,Base,altura;
-	Trapezio(double base,double Base, double altura){
-		this.base = base;
-		this.Base = Base;
-		this.altura = altura;
+	double Base,base,altura;
+	
+	void set_Dados(){
+	Base = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor da Base maior : "));
+	base = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor da Base menos : "));
+	altura = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor da altura : "));
 	}
-	double get_areaTrapezio(){
-		return ((Base +base)/2)*altura;
+	
+	double calcularArea(){
+		return ((Base + base)/2)*altura;
+	}
+	double get_Dados(){
+		return calcularArea();
 	}
 }

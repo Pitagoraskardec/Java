@@ -1,11 +1,15 @@
+import javax.swing.JOptionPane;
 public class Quadrado{
+	double lado = 0;
 	
-		double lado;
-		Quadrado(double lado){
-			this.lado = lado;
-		}
-		double get_areaQuadrado(){
-			return lado * lado;
-		}
-	
+	void set_Dados(){
+		
+			lado = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor do \"Lado\": "));
+	}
+	double calcularArea(){
+		return (lado*lado);
+	}
+	double get_Dados(){
+		return calcularArea();
+	}
 }

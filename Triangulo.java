@@ -1,13 +1,24 @@
+import javax.swing.JOptionPane;
 public class Triangulo{
-	double base,altura;
+	double base = 0;
+	double altura = 0;
 	
-	Triangulo(double base, double altura){
-		this.base = base;
-		this.altura = altura;
-	}
-	double get_areaTriangulo(){
-		return (base*altura)/2;
-	}
-	
-
+        void set_Dados(){
+			
+			
+			base = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor da \"Base\": "));
+			altura = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor da \"Altura\": "));
+		}
+		
+		double calcularArea(){
+			
+			return ((base * altura)/2);
+		}
+		
+		double get_Dados(){
+		
+			return calcularArea();
+			
+		}
+		
 }
