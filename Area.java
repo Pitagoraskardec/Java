@@ -1,3 +1,4 @@
+// classe pricipal
 public class Area{
 	public static void main(String[] args){
 	
@@ -10,5 +11,7 @@ public class Area{
 		System.out.println("Area do triangulo e " + teste1.get_areaTriangulo());
 		System.out.println("Area da circunferencia e " + teste2.get_areaCircunferencia());
 		System.out.println("Area do trapezio e " + teste3.get_areaTrapezio());
-	}
+	
+
+}
 }
